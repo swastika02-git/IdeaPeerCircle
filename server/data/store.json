@@ -1,0 +1,726 @@
+{
+  "users": [
+    {
+      "id": "user-alex",
+      "name": "Alex Chen",
+      "username": "alexchen",
+      "email": "alex@stanford.edu",
+      "password_hash": "$2a$10$C/dOSdiIp5LV3PGFSjGQmOPkExYlV91PHqFrMp4puRNOLf4NiIhym",
+      "college": "Stanford University",
+      "bio": "CS junior passionate about ed-tech, accessible AI assistants, and building playful web tools.",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+      "skills": [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Next.js",
+        "Python"
+      ],
+      "currently_learning": [
+        "FastAPI",
+        "Vector Databases",
+        "Distributed Systems"
+      ],
+      "can_help_with": [
+        "Frontend",
+        "UI/UX",
+        "AI/ML"
+      ],
+      "interests": [
+        "EdTech",
+        "AI Agents",
+        "Human-Computer Interaction"
+      ],
+      "created_at": "2026-10-06T12:03:12.284Z"
+    },
+    {
+      "id": "user-maya",
+      "name": "Maya Patel",
+      "username": "mayapatel",
+      "email": "maya@mit.edu",
+      "password_hash": "$2a$10$C/dOSdiIp5LV3PGFSjGQmOPkExYlV91PHqFrMp4puRNOLf4NiIhym",
+      "college": "MIT",
+      "bio": "Sustainability enthusiast & systems architect. Love wrangling data streams and optimizing microservices.",
+      "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150&auto=format&fit=crop&q=80",
+      "skills": [
+        "Node.js",
+        "PostgreSQL",
+        "Express",
+        "Docker",
+        "Mapbox GL"
+      ],
+      "currently_learning": [
+        "UI/UX Design",
+        "Figma",
+        "Micro-frontends"
+      ],
+      "can_help_with": [
+        "Backend",
+        "Database",
+        "Deployment"
+      ],
+      "interests": [
+        "ClimateTech",
+        "Open Source",
+        "Urban Mobility"
+      ],
+      "created_at": "2026-10-06T12:03:12.287Z"
+    },
+    {
+      "id": "user-liam",
+      "name": "Liam Vance",
+      "username": "liamvance",
+      "email": "liam@berkeley.edu",
+      "password_hash": "$2a$10$C/dOSdiIp5LV3PGFSjGQmOPkExYlV91PHqFrMp4puRNOLf4NiIhym",
+      "college": "UC Berkeley",
+      "bio": "Cognitive Science & EECS double major exploring empathetic interfaces, digital wellness, and accessible design.",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+      "skills": [
+        "React",
+        "Figma",
+        "Tailwind CSS",
+        "Firebase",
+        "Accessibility"
+      ],
+      "currently_learning": [
+        "Rust",
+        "WebSockets",
+        "Data Security"
+      ],
+      "can_help_with": [
+        "UI/UX",
+        "Frontend",
+        "Testing"
+      ],
+      "interests": [
+        "Digital Health",
+        "Accessible Design",
+        "Peer Support Networks"
+      ],
+      "created_at": "2026-10-06T12:03:12.287Z"
+    },
+    {
+      "id": "user-elena",
+      "name": "Elena Rostova",
+      "username": "elenarostova",
+      "email": "elena@cmu.edu",
+      "password_hash": "$2a$10$C/dOSdiIp5LV3PGFSjGQmOPkExYlV91PHqFrMp4puRNOLf4NiIhym",
+      "college": "Carnegie Mellon University",
+      "bio": "Algorithms enthusiast and creative technologist. Turning complex graph traversals into beautiful browser animations.",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80",
+      "skills": [
+        "JavaScript",
+        "Canvas API",
+        "Algorithms",
+        "Three.js",
+        "React"
+      ],
+      "currently_learning": [
+        "WebAssembly",
+        "C++",
+        "Shader Programming (GLSL)"
+      ],
+      "can_help_with": [
+        "Frontend",
+        "Algorithms",
+        "Testing"
+      ],
+      "interests": [
+        "Algorithm Visualization",
+        "Creative Coding",
+        "Interactive Learning"
+      ],
+      "created_at": "2026-10-06T12:03:12.287Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-studybuddy",
+      "user_id": "user-alex",
+      "title": "StudyBuddy AI",
+      "short_description": "AI-driven synthesis tool that matches peer study groups based on syllabus pacing, weak topics, and active project schedules.",
+      "category": "EdTech / AI",
+      "problem": "Students struggle to find study peers who are currently on the exact same syllabus module, work schedule, and conceptual challenge level.",
+      "target_users": "College students taking challenging STEM courses with heavy problem sets.",
+      "solution": "Parses course syllabi, past study checkpoints, and student-tagged difficulty areas to automatically cluster complementary 3-person peer circles.",
+      "real_world_impact": "Tripled study consistency and midterm exam scores across 3 pilot computer science courses with over 450 active students.",
+      "tech_stack": [
+        "React",
+        "Node.js",
+        "Express",
+        "Tailwind CSS",
+        "OpenAI API"
+      ],
+      "skills_used": [
+        "Frontend",
+        "AI/ML",
+        "REST APIs",
+        "State Management"
+      ],
+      "ai_used": 1,
+      "ai_details": "Generates semantic topic embeddings and customized icebreakers tailored to the group study goals.",
+      "difficulty": "Intermediate",
+      "github_url": "https://github.com/alexchen/studybuddy-ai",
+      "live_demo_url": "https://studybuddy-ai.demo.app",
+      "screenshots": [
+        "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=800&auto=format&fit=crop&q=80"
+      ],
+      "collab_looking_for": [
+        "Backend",
+        "Database",
+        "Deployment"
+      ],
+      "collab_can_help_with": [
+        "Frontend",
+        "UI/UX"
+      ],
+      "created_at": "2026-10-06T12:03:12.288Z"
+    },
+    {
+      "id": "proj-greenroute",
+      "user_id": "user-maya",
+      "title": "GreenRoute",
+      "short_description": "Real-time campus transit optimizer promoting low-carbon commuting routes with gamified peer carbon-savings circles.",
+      "category": "Sustainability / Mobility",
+      "problem": "Commuters lack live synchronization between bike share docks, campus shuttles, and safe walking paths, leading to excessive car trips.",
+      "target_users": "University students, faculty, and urban campus commuters.",
+      "solution": "Combines municipal transit feeds, campus GPS shuttles, and bike dock sensors into a live multi-modal route planner with low-carbon rewards.",
+      "real_world_impact": "Prevented an estimated 1.2 tons of carbon emissions across Berkeley and MIT campuses in the spring semester.",
+      "tech_stack": [
+        "Node.js",
+        "PostgreSQL",
+        "Express",
+        "Mapbox GL",
+        "Docker"
+      ],
+      "skills_used": [
+        "Backend",
+        "Database",
+        "Geospatial",
+        "API Integration"
+      ],
+      "ai_used": 1,
+      "ai_details": "Predicts campus bike rack depletion rates using weather metrics and class schedule turnover.",
+      "difficulty": "Advanced",
+      "github_url": "https://github.com/mayapatel/green-route",
+      "live_demo_url": "https://greenroute.demo.app",
+      "screenshots": [
+        "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508873696983-2df5293cb325?w=800&auto=format&fit=crop&q=80"
+      ],
+      "collab_looking_for": [
+        "UI/UX",
+        "Frontend",
+        "Testing"
+      ],
+      "collab_can_help_with": [
+        "Backend",
+        "Database"
+      ],
+      "created_at": "2026-10-06T12:03:12.288Z"
+    },
+    {
+      "id": "proj-campuscare",
+      "user_id": "user-liam",
+      "title": "CampusCare",
+      "short_description": "An anonymous, peer-led active listening network connecting students during high-stress exam periods with verified student listeners.",
+      "category": "Mental Health / Community",
+      "problem": "Campus mental wellness centers frequently face long multi-week backlogs, leaving students without immediate, stigma-free peer listeners.",
+      "target_users": "Students experiencing academic burnout, isolation, or high exam anxiety.",
+      "solution": "Secure peer chatrooms with verified student volunteers trained in empathetic listening, equipped with real-time distress detection.",
+      "real_world_impact": "Facilitated over 1,200 hours of peer listening sessions with 98% constructive ratings and zero escalation incidents.",
+      "tech_stack": [
+        "React",
+        "Firebase",
+        "WebRTC",
+        "Tailwind CSS",
+        "Figma"
+      ],
+      "skills_used": [
+        "UI/UX",
+        "Frontend",
+        "Realtime Web",
+        "Accessible Design"
+      ],
+      "ai_used": 1,
+      "ai_details": "On-device sentiment keyword analysis to trigger instant professional hotline referrals when distress patterns emerge.",
+      "difficulty": "Intermediate",
+      "github_url": "https://github.com/liamvance/campus-care",
+      "live_demo_url": "https://campuscare.demo.app",
+      "screenshots": [
+        "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&auto=format&fit=crop&q=80"
+      ],
+      "collab_looking_for": [
+        "Backend",
+        "Database",
+        "Security"
+      ],
+      "collab_can_help_with": [
+        "UI/UX",
+        "Frontend"
+      ],
+      "created_at": "2026-10-06T12:03:12.288Z"
+    },
+    {
+      "id": "proj-codecanvas",
+      "user_id": "user-elena",
+      "title": "CodeCanvas",
+      "short_description": "Interactive canvas that turns algorithmic code execution into step-by-step visual node simulations for Dijkstra, Tree traversals, and DP.",
+      "category": "Developer Tools / Learning",
+      "problem": "Algorithms in textbooks and coding platforms are abstract; beginners struggle to visualize variable scopes, pointers, and memory state changes.",
+      "target_users": "Undergraduates enrolled in CS theory and self-taught software engineers.",
+      "solution": "Parses code into AST nodes and creates 60FPS fluid canvas graphs illustrating stack frames, recursion trees, and array transformations.",
+      "real_world_impact": "Adopted across 6 university discussion lab sections to explain graph searches and recursive memoization.",
+      "tech_stack": [
+        "JavaScript",
+        "Canvas API",
+        "React",
+        "Tailwind CSS",
+        "Babel AST"
+      ],
+      "skills_used": [
+        "Frontend",
+        "Algorithms",
+        "AST Parsing",
+        "Data Structures"
+      ],
+      "ai_used": 0,
+      "ai_details": "Static AST analysis to compute time complexity boundaries.",
+      "difficulty": "Advanced",
+      "github_url": "https://github.com/elenarostova/code-canvas",
+      "live_demo_url": "https://codecanvas.demo.app",
+      "screenshots": [
+        "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&auto=format&fit=crop&q=80"
+      ],
+      "collab_looking_for": [
+        "AI/ML",
+        "Backend",
+        "Documentation"
+      ],
+      "collab_can_help_with": [
+        "Frontend",
+        "Algorithms"
+      ],
+      "created_at": "2026-10-06T12:03:12.289Z"
+    },
+    {
+      "id": "proj-safeshelf",
+      "user_id": "user-alex",
+      "title": "SafeShelf",
+      "short_description": "Zero-fee peer textbook exchange and verification ledger allowing students to borrow and donate course textbooks safely on campus.",
+      "category": "Marketplace / Campus Utility",
+      "problem": "Textbooks cost students over $1,200 annually, while university buyback programs offer less than 10% value back to students.",
+      "target_users": "Budget-conscious university students seeking affordable textbook access.",
+      "solution": "A campus locker exchange system with QR-code proof-of-handoff and condition escrow checks.",
+      "real_world_impact": "Saved over $42,000 across 3 residence halls during the fall textbook buying rush.",
+      "tech_stack": [
+        "React",
+        "Express",
+        "SQLite",
+        "Tailwind CSS",
+        "QR Scanner"
+      ],
+      "skills_used": [
+        "Frontend",
+        "Backend",
+        "Database",
+        "Mobile Web"
+      ],
+      "ai_used": 1,
+      "ai_details": "OCR scanner matching cover page ISBN barcodes with international edition databases.",
+      "difficulty": "Beginner",
+      "github_url": "https://github.com/alexchen/safe-shelf",
+      "live_demo_url": "https://safeshelf.demo.app",
+      "screenshots": [
+        "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&auto=format&fit=crop&q=80"
+      ],
+      "collab_looking_for": [
+        "Testing",
+        "Deployment",
+        "UI/UX"
+      ],
+      "collab_can_help_with": [
+        "Frontend",
+        "REST APIs"
+      ],
+      "created_at": "2026-10-06T12:03:12.289Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "rev-sb-1",
+      "project_id": "proj-studybuddy",
+      "reviewer_id": "user-maya",
+      "scores": {
+        "ui_ux": 9,
+        "technical": 7,
+        "innovation": 8,
+        "ai": 8,
+        "usefulness": 9,
+        "problem_solving": 8
+      },
+      "overall_score": 8.2,
+      "well_done": "The onboarding UX is exceptionally friendly and warm! Clear problem definition that resonates with every college student.",
+      "to_improve": "The backend grouping algorithm currently makes synchronous calls to OpenAI without retry queues. Server architecture needs connection pooling and Redis caching.",
+      "recommend_learn": "Look into BullMQ / Redis job queues and robust REST API error handling to prevent rate-limit crashes under exam-week spikes.",
+      "created_at": "2026-10-06T12:03:12.289Z"
+    },
+    {
+      "id": "rev-sb-2",
+      "project_id": "proj-studybuddy",
+      "reviewer_id": "user-liam",
+      "scores": {
+        "ui_ux": 9,
+        "technical": 8,
+        "innovation": 9,
+        "ai": 8,
+        "usefulness": 9,
+        "problem_solving": 9
+      },
+      "overall_score": 8.7,
+      "well_done": "Great use of color contrast and approachable microcopy. The study circle cards feel like a cozy student lounge rather than a sterile calendar.",
+      "to_improve": "Focus states on mobile dropdowns could be sharper for screen reader accessibility.",
+      "recommend_learn": "Implement ARIA live regions for realtime member joins and test with keyboard tab navigation.",
+      "created_at": "2026-10-06T12:03:12.290Z"
+    },
+    {
+      "id": "rev-sb-3",
+      "project_id": "proj-studybuddy",
+      "reviewer_id": "user-elena",
+      "scores": {
+        "ui_ux": 8,
+        "technical": 7,
+        "innovation": 8,
+        "ai": 7,
+        "usefulness": 8,
+        "problem_solving": 8
+      },
+      "overall_score": 7.7,
+      "well_done": "Super clever idea to cluster by syllabus timeline rather than just course code alone!",
+      "to_improve": "The student clustering algorithm is O(N^2) pairwise comparison. If campus volume scales over 1,000 students, match requests will hang.",
+      "recommend_learn": "Explore K-Means clustering or locality-sensitive hashing (LSH) for sub-linear similarity search.",
+      "created_at": "2026-10-06T12:03:12.290Z"
+    },
+    {
+      "id": "rev-gr-1",
+      "project_id": "proj-greenroute",
+      "reviewer_id": "user-alex",
+      "scores": {
+        "ui_ux": 7,
+        "technical": 9,
+        "innovation": 9,
+        "ai": 8,
+        "usefulness": 9,
+        "problem_solving": 9
+      },
+      "overall_score": 8.5,
+      "well_done": "Incredible technical engineering! The Mapbox synchronization with municipal GTFS feeds is butter-smooth.",
+      "to_improve": "The route options screen is quite dense with data tables. Needs cleaner visual hierarchy so students rushing to class can see the best option in 2 seconds.",
+      "recommend_learn": "Component-driven design systems, mobile card layout paradigms, and progressive disclosure.",
+      "created_at": "2026-10-06T12:03:12.290Z"
+    },
+    {
+      "id": "rev-gr-2",
+      "project_id": "proj-greenroute",
+      "reviewer_id": "user-liam",
+      "scores": {
+        "ui_ux": 7,
+        "technical": 9,
+        "innovation": 8,
+        "ai": 8,
+        "usefulness": 9,
+        "problem_solving": 9
+      },
+      "overall_score": 8.3,
+      "well_done": "Real-world impact is undeniable. The carbon calculation equation is mathematically solid.",
+      "to_improve": "Map controls are small on touch screens, making it tricky for students riding a bike to interact.",
+      "recommend_learn": "Touch target ergonomics (minimum 44x44px tappable targets) and mobile-first design.",
+      "created_at": "2026-10-06T12:03:12.291Z"
+    },
+    {
+      "id": "rev-cc-1",
+      "project_id": "proj-campuscare",
+      "reviewer_id": "user-maya",
+      "scores": {
+        "ui_ux": 9,
+        "technical": 8,
+        "innovation": 9,
+        "ai": 8,
+        "usefulness": 10,
+        "problem_solving": 9
+      },
+      "overall_score": 8.8,
+      "well_done": "Deeply thoughtful privacy considerations. The zero-knowledge chatroom architecture shows real empathy for users in distress.",
+      "to_improve": "Firebase security rules need automated audit tests to prevent unauthorized room token spoofing.",
+      "recommend_learn": "Database row-level security (RLS) policies and WebRTC ICE server load-balancing.",
+      "created_at": "2026-10-06T12:03:12.291Z"
+    },
+    {
+      "id": "rev-cc-2",
+      "project_id": "proj-campuscare",
+      "reviewer_id": "user-alex",
+      "scores": {
+        "ui_ux": 9,
+        "technical": 8,
+        "innovation": 8,
+        "ai": 8,
+        "usefulness": 9,
+        "problem_solving": 9
+      },
+      "overall_score": 8.5,
+      "well_done": "Gentle, soothing color scheme and respectful onboarding. Very calming experience.",
+      "to_improve": "WebRTC reconnection drops when switching from campus Wi-Fi to cellular data.",
+      "recommend_learn": "Graceful WebRTC peer reconnection handshakes and exponential backoff strategies.",
+      "created_at": "2026-10-06T12:03:12.291Z"
+    }
+  ],
+  "ai_insights": [
+    {
+      "id": "ai-studybuddy",
+      "project_id": "proj-studybuddy",
+      "summary": "StudyBuddy AI displays stellar product empathy and student-centered UX. Its primary technical growth opportunity is hardening backend architecture and implementing scalable matching algorithms.",
+      "strengths": [
+        "Exceptional, welcoming onboarding UX with strong visual polish",
+        "Direct, highly articulated problem statement addressing real university pain points",
+        "Innovative syllabus timeline alignment rather than generic course-matching"
+      ],
+      "areas_to_improve": [
+        "Backend queueing and resilience under synchronous AI load",
+        "Algorithmic scaling of peer matching beyond small cohort sizes",
+        "Mobile keyboard navigation and accessibility focus states"
+      ],
+      "skill_gaps": [
+        "REST API resiliency & rate-limiting",
+        "Asynchronous job queueing (Redis / BullMQ)",
+        "Sub-linear similarity search & clustering algorithms",
+        "ARIA accessibility compliance"
+      ],
+      "learning_recommendations": [
+        {
+          "title": "Asynchronous Job Queues with BullMQ & Redis",
+          "reason": "Reviewers noted synchronous API calls can hang during peak exam-week usage.",
+          "action": "Refactor the group generation worker into a background job queue."
+        },
+        {
+          "title": "Advanced Matching Algorithms (K-Means & LSH)",
+          "reason": "Current pairwise O(N^2) comparison will degrade performance past 1,000 students.",
+          "action": "Implement vector clustering for rapid cohort synthesis."
+        },
+        {
+          "title": "Screen Reader Accessible Navigation",
+          "reason": "Enhance focus rings and ARIA live regions for peer notifications.",
+          "action": "Audit modal focus traps and add aria-live announcements."
+        }
+      ],
+      "project_improvements": [
+        "Add Redis caching for frequently visited syllabus modules",
+        "Implement fallback offline icebreakers if LLM provider times out",
+        "Expose accessible dark/high-contrast mode toggle"
+      ],
+      "collaboration_needs": [
+        "A Backend Engineer skilled in Express & Redis queues",
+        "A Database Specialist to index student schedule availability matrices"
+      ],
+      "feedback_synthesis": {
+        "reviewCount": 3,
+        "liked": "Your problem statement and inviting UI were consistently praised by all peer reviewers.",
+        "commonConcern": "Multiple reviewers cautioned that synchronous API calls will cause backend bottlenecks during finals season.",
+        "uniqueSuggestion": "Elena recommended switching to vector embeddings with locality-sensitive hashing for instant O(log N) matching.",
+        "takeaway": "Your strongest area is intuitive product design. Your biggest growth opportunity is backend concurrency and algorithmic scaling."
+      },
+      "created_at": "2026-10-06T12:03:12.291Z"
+    },
+    {
+      "id": "ai-greenroute",
+      "project_id": "proj-greenroute",
+      "summary": "GreenRoute excels in robust systems integration, Mapbox manipulation, and tangible environmental impact. Next steps should focus on user ergonomics and mobile UI simplification.",
+      "strengths": [
+        "Exceptional real-time data ingestion and Mapbox GL synchronization",
+        "Quantifiable environmental impact with rigorous carbon calculation models",
+        "Sophisticated bike rack availability prediction model"
+      ],
+      "areas_to_improve": [
+        "Information density on mobile viewport screens",
+        "Touch target ergonomics for active cyclists and pedestrians",
+        "Visual hierarchy of recommended transit alternatives"
+      ],
+      "skill_gaps": [
+        "Mobile-first responsive design paradigms",
+        "Progressive disclosure in complex data displays",
+        "WCAG touch target standards (44x44px minimums)"
+      ],
+      "learning_recommendations": [
+        {
+          "title": "Progressive Disclosure in UI Design",
+          "reason": "High density transit tables overwhelm users when on the go.",
+          "action": "Redesign route cards with primary metrics upfront and secondary details collapsed."
+        },
+        {
+          "title": "Mobile Ergonomics & Touch Target Sizing",
+          "reason": "Cyclists need large, unambiguous buttons that work on one-handed mobile devices.",
+          "action": "Audit tap targets to satisfy 48px minimum guidelines."
+        }
+      ],
+      "project_improvements": [
+        "Add 1-tap \"Fastest Low Carbon\" shortcut banner on mobile home screen",
+        "Provide offline map caching for campus tunnels and subway segments"
+      ],
+      "collaboration_needs": [
+        "A UI/UX designer with mobile Figma systems experience",
+        "A Frontend developer to build smooth swipeable transit card sheets"
+      ],
+      "feedback_synthesis": {
+        "reviewCount": 2,
+        "liked": "Reviewers admired the rock-solid systems architecture and real-world GTFS integration.",
+        "commonConcern": "Both peers emphasized that transit tables are too dense for students rushing between classes.",
+        "uniqueSuggestion": "Consider a simplified \"Emergency Transit Card\" mode when battery is low or time is tight.",
+        "takeaway": "Outstanding engineering backbone; elevate the experience by streamlining mobile user ergonomics."
+      },
+      "created_at": "2026-10-06T12:03:12.292Z"
+    }
+  ],
+  "collaborations": [
+    {
+      "id": "collab-1",
+      "project_id": "proj-studybuddy",
+      "sender_id": "user-maya",
+      "receiver_id": "user-alex",
+      "skill_offered": "Backend",
+      "skill_wanted": "UI/UX",
+      "message": "Hey Alex! Loved StudyBuddy AI. I am strong in Node.js, Redis, and PostgreSQL and can help you build the async queue backend. Would love your tips on React & UI design in return!",
+      "status": "pending",
+      "created_at": "2026-10-06T12:03:12.292Z"
+    },
+    {
+      "id": "collab-2",
+      "project_id": "proj-greenroute",
+      "sender_id": "user-liam",
+      "receiver_id": "user-maya",
+      "skill_offered": "UI/UX",
+      "skill_wanted": "Backend",
+      "message": "Hi Maya! GreenRoute is awesome. I specialize in accessible mobile UI and ergonomics. I can help streamline your transit cards and map controls!",
+      "status": "accepted",
+      "created_at": "2026-10-06T12:03:12.292Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-alex-1",
+      "user_id": "user-alex",
+      "type": "collab_request",
+      "title": "New Collaboration Offer",
+      "message": "Maya Patel offered to help with Backend on StudyBuddy AI.",
+      "link": "/collaborate",
+      "read": 0,
+      "created_at": "2026-10-06T12:03:12.298Z"
+    },
+    {
+      "id": "notif-alex-2",
+      "user_id": "user-alex",
+      "type": "review",
+      "title": "New Peer Review Received",
+      "message": "Elena Rostova reviewed StudyBuddy AI with constructive suggestions.",
+      "link": "/projects/proj-studybuddy",
+      "read": 0,
+      "created_at": "2026-10-06T12:03:12.298Z"
+    },
+    {
+      "id": "notif-alex-3",
+      "user_id": "user-alex",
+      "type": "ai_ready",
+      "title": "AI Learning Snapshot Ready",
+      "message": "Your AI Learning Snapshot for StudyBuddy AI has been synthesized with fresh insights.",
+      "link": "/projects/proj-studybuddy",
+      "read": 1,
+      "created_at": "2026-10-06T12:03:12.299Z"
+    },
+    {
+      "id": "notif-maya-1",
+      "user_id": "user-maya",
+      "type": "collab_accepted",
+      "title": "Collaboration Accepted!",
+      "message": "Liam Vance accepted your collaboration invitation on GreenRoute.",
+      "link": "/collaborate",
+      "read": 0,
+      "created_at": "2026-10-06T12:03:12.299Z"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "ach-alex-1",
+      "user_id": "user-alex",
+      "badge_key": "first_project",
+      "title": "First Project",
+      "description": "Published your first project to the IdeaPeerCircle community.",
+      "icon": "Rocket",
+      "created_at": "2026-10-06T12:03:12.293Z"
+    },
+    {
+      "id": "ach-alex-2",
+      "user_id": "user-alex",
+      "badge_key": "helpful_reviewer",
+      "title": "Helpful Reviewer",
+      "description": "Provided constructive peer feedback across multiple dimensions.",
+      "icon": "MessageSquareHeart",
+      "created_at": "2026-10-06T12:03:12.293Z"
+    },
+    {
+      "id": "ach-alex-3",
+      "user_id": "user-alex",
+      "badge_key": "feedback_champion",
+      "title": "Feedback Champion",
+      "description": "Received over 3 thorough peer reviews on a single project.",
+      "icon": "Award",
+      "created_at": "2026-10-06T12:03:12.294Z"
+    },
+    {
+      "id": "ach-maya-1",
+      "user_id": "user-maya",
+      "badge_key": "first_project",
+      "title": "First Project",
+      "description": "Published your first project to the IdeaPeerCircle community.",
+      "icon": "Rocket",
+      "created_at": "2026-10-06T12:03:12.294Z"
+    },
+    {
+      "id": "ach-maya-2",
+      "user_id": "user-maya",
+      "badge_key": "community_builder",
+      "title": "Community Builder",
+      "description": "Sent a collaboration offer to assist a peer with their project.",
+      "icon": "Users",
+      "created_at": "2026-10-06T12:03:12.294Z"
+    },
+    {
+      "id": "ach-liam-1",
+      "user_id": "user-liam",
+      "badge_key": "first_project",
+      "title": "First Project",
+      "description": "Published your first project to the IdeaPeerCircle community.",
+      "icon": "Rocket",
+      "created_at": "2026-10-06T12:03:12.295Z"
+    },
+    {
+      "id": "ach-liam-2",
+      "user_id": "user-liam",
+      "badge_key": "helpful_reviewer",
+      "title": "Helpful Reviewer",
+      "description": "Provided constructive peer feedback across multiple dimensions.",
+      "icon": "MessageSquareHeart",
+      "created_at": "2026-10-06T12:03:12.297Z"
+    },
+    {
+      "id": "ach-elena-1",
+      "user_id": "user-elena",
+      "badge_key": "first_project",
+      "title": "First Project",
+      "description": "Published your first project to the IdeaPeerCircle community.",
+      "icon": "Rocket",
+      "created_at": "2026-10-06T12:03:12.297Z"
+    }
+  ]
+}

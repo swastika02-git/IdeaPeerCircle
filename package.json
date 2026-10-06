@@ -1,0 +1,28 @@
+{
+  "name": "ideapeercircle",
+  "version": "1.0.0",
+  "description": "IdeaPeerCircle - AI-Powered Peer Learning Platform for Students. Build. Share. Learn. Improve.",
+  "scripts": {
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"magenta,cyan\" \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "start": "npm run start --prefix server",
+    "build": "npm run build --prefix client",
+    "seed": "npm run seed --prefix server",
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swastika02-git/IdeaPeerCircle.git"
+  },
+  "keywords": [
+    "education",
+    "ai",
+    "peer-learning",
+    "student-projects",
+    "feedback"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
