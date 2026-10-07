@@ -1,8 +1,6 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import path from 'path';
-import { fileURLToPath } from 'url';
 
 import db from './db/database.js';
 import { seedDatabase } from './db/seed.js';
@@ -18,9 +16,6 @@ import userRoutes from './routes/userRoutes.js';
 
 dotenv.config();
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
 const app = express();
 const PORT = process.env.PORT || 5000;
 
@@ -29,13 +24,18 @@ app.use(cors({
   origin: true,
   credentials: true
 }));
+
 app.use(express.json());
 
 // Auto-seed if database is completely empty
 const existingUsers = db.find('users');
+
 if (existingUsers.length === 0) {
   console.log('Database empty, triggering initial demo seed...');
-  seedDatabase().catch(err => console.error('Seed error:', err));
+
+  seedDatabase().catch(err => {
+    console.error('Seed error:', err);
+  });
 }
 
 // API Routes
@@ -69,39 +69,40 @@ app.get('/api/health', (req, res) => {
 app.post('/api/admin/reset-demo', async (req, res) => {
   try {
     await seedDatabase();
-    res.json({ success: true, message: 'Database refreshed with pristine demo student projects.' });
-  } catch (err) {
-    res.status(500).json({ error: 'Failed to reset demo: ' + err.message });
-  }
-});
 
-// Serve frontend static build in production if present
-const clientDist = path.join(__dirname, '../../client/dist');
-app.use(express.static(clientDist));
-app.get('*', (req, res, next) => {
-  if (req.path.startsWith('/api')) {
-    return next();
+    res.json({
+      success: true,
+      message: 'Database refreshed with pristine demo student projects.'
+    });
+  } catch (err) {
+    res.status(500).json({
+      error: 'Failed to reset demo: ' + err.message
+    });
   }
-  res.sendFile(path.join(clientDist, 'index.html'), err => {
-    if (err) next();
-  });
 });
 
 // Global Error Handler
 app.use((err, req, res, next) => {
   console.error('Unhandled server error:', err);
+
   res.status(500).json({
     error: 'An internal server error occurred.',
-    message: process.env.NODE_ENV === 'development' ? err.message : undefined
+    message: process.env.NODE_ENV === 'development'
+      ? err.message
+      : undefined
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`===============================================`);
-  console.log(`  IdeaPeerCircle Backend API Server Running!  `);
-  console.log(`  Port: http://localhost:${PORT}             `);
-  console.log(`  Health: http://localhost:${PORT}/api/health `);
-  console.log(`===============================================`);
-});
-
+// Export the Express app for Vercel
 export default app;
+
+// Start server locally
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(PORT, () => {
+    console.log('===============================================');
+    console.log('  IdeaPeerCircle Backend API Server Running!  ');
+    console.log(`  Port: http://localhost:${PORT}`);
+    console.log(`  Health: http://localhost:${PORT}/api/health`);
+    console.log('===============================================');
+  });
+}
